@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<title>Wasatch LC</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="script.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
+<body>
+
+    <!-- Links (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-row w3-large w3-light-grey">
+            <div class="w3-col s3">
+                <a href="#register_tryouts" class="w3-button w3-block">Tryouts</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#register_tournaments" class="w3-button w3-block">Tournaments</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#about" class="w3-button w3-block">About</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#contact" class="w3-button w3-block">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="w3-content" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
+
+        <!-- Slideshow -->
+        <div class="w3-container">
+            <div class="w3-display-container mySlides">
+                <img src="./resources/images/logo/wasatch.wu.logo.png" style="width:100%">
+            </div>
+            <div class="w3-display-container mySlides">
+                <img src="./resources/images/team/2019/team2019.one.jpeg" style="width:100%">
+            </div>
+            <div class="w3-display-container mySlides">
+                <img src="./resources/images/team/2019/team.two.jpeg" style="width:100%">
+            </div>
+
+            <!-- Slideshow next/previous buttons -->
+            <div class="w3-container w3-dark-grey w3-padding w3-xlarge">
+                <div class="w3-left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left w3-hover-text-teal"></i>
+                </div>
+                <div class="w3-right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right w3-hover-text-teal"></i>
+                </div>
+
+                <div class="w3-center">
+                    <span class="w3-tag demodots w3-border w3-transparent w3-hover-white"
+                        onclick="currentDiv(1)"></span>
+                    <span class="w3-tag demodots w3-border w3-transparent w3-hover-white"
+                        onclick="currentDiv(2)"></span>
+                    <span class="w3-tag demodots w3-border w3-transparent w3-hover-white"
+                        onclick="currentDiv(3)"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Grid -->
+        <div class="w3-row w3-container">
+            <div class="w3-center w3-padding-64">
+                <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">The Wasatch Difference</span>
+            </div>
+            <div class="w3-col l3 m6 w3-light-grey w3-container w3-padding-16">
+                <h3>Mission</h3>
+                <p>Our mission is to provide a distinct advantage in College Recruiting to players on our club over other teams.</p>
+            </div>
+
+            <div class="w3-col l3 m6 w3-grey w3-container w3-padding-16">
+                <h3>Dedication</h3>
+                <p>Our team is a distinctive group of young men who are each hand-picked for their on-field talents and off-field display of character.</p>
+            </div>
+
+            <div class="w3-col l3 m6 w3-dark-grey w3-container w3-padding-16">
+                <h3>Commitment</h3>
+                <p>We go the extra miles with filming our games, recording stats, clipping highlight films, emailing and calling college programs for you.</p>
+            </div>
+
+            <div class="w3-col l3 m6 w3-black w3-container w3-padding-16">
+                <h3>Community</h3>
+                <p>Developing friendships between players and parents from various schools and communities is a key component to our program</p>
+            </div>
+        </div>
+
+        <!-- Try Outs -->
+        <div class="w3-row-padding" id="register_tryouts">
+            <div class="w3-center w3-padding-64">
+                <h1>Tryouts</h1>
+            </div>
+
+            <div class="w3-half w3-margin-bottom">
+                <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+                    <li class="w3-black w3-xlarge w3-padding-32">Boys Tryouts</li>
+                    <li class="w3-padding-16"><b>Boys Tryouts - August 15, 2021</b></li>
+                    <li class="w3-padding-16"><b>Boys Tryouts - August 22, 2021</b></li>
+                    <li class="w3-light-grey w3-padding-24">
+                        <div class="w3-center">
+                            <div class="w3-bar">
+                                <a href="./register.html" class="w3-button w3-green w3-padding-large">Register now!</a>
+                            </div>
+                        </div>                    </li>
+                </ul>
+            </div>
+
+            <div class="w3-half w3-margin-bottom">
+                <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+                    <li class="w3-dark-grey w3-xlarge w3-padding-32">Girls Tryouts</li>
+                    <li class="w3-padding-16"><b>Girls Tryouts - August 15, 2021</b></li>
+                    <li class="w3-padding-16"><b>Girls Tryouts - August 22, 2021</b></li>
+                    <li class="w3-light-grey w3-padding-24">
+                        <div class="w3-center">
+                            <div class="w3-bar">
+                                <a href="./register.html" class="w3-button w3-green w3-padding-large">Register now!</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+                <!-- Tournaments -->
+        <div class="w3-row-padding" id="register_tournaments">
+            <div class="w3-center w3-padding-64">
+                <h1>Tournaments</h1>
+            </div>
+            <div class="w3-full w3-margin-bottom">
+                <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+                    <li class="w3-black w3-xlarge w3-padding-32">Wasatch Invitational</li>
+                    <li class="w3-padding-16"><b>DATES: October 10-11th, 2020</b></li>
+                    <li class="w3-padding-16"><b>LOCATION: Sugar House Park (1330 E 2100 S, Salt Lake City, UT, 84106)</b></li>
+                    <li class="w3-padding-16"><b>COST: $1500 per team - *Multiple Team Discount - $100 off team registration*DIVISIONS: Boys HS Elite
+                        (2021-2024) & Boys HS Rising (2021-2024)</b></li>
+                    <li class="w3-padding-16"><b>FORMAT: 5 Games Guaranteed; Championship format</b> Support</li>
+                    <li class="w3-padding-16"><b>RULES: NHFS rules, 22-minute running halves, 3 minute halftime, NO timeouts</b></li>
+                    <li class="w3-padding-16"><b>College Coaches in Attendance from NCAA D1, D2, & D3; MCLA D1 & D2; NAIA</b></li>
+                    <li class="w3-padding-16"><b>CONTACT: wasatchlc@gmail.com; OR Danny Larkin at (801) 703-6734</b></li>
+                    <li class="w3-light-grey w3-padding-24">
+                    <div class="w3-center">
+                        <div class="w3-bar">
+                            <a href="./register.html" class="w3-button w3-green w3-padding-large">Register now!</a>
+                        </div>
+                    </div>
+                    </li>   
+                </ul>
+                </div>
+
+        </div>
+
+
+        <!-- Grid -->
+        <div class="w3-row-padding" id="about">
+            <div class="w3-center w3-padding-64">
+                <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Coaching Staff</span>
+            </div>
+
+            <div class="w3-third w3-margin-bottom">
+                <div class="w3-card-4">
+                    <img src="./resources/images/headshots/danny.headshot.2.jpg" alt="John" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Danny Larkin</h3>
+                        <p class="w3-opacity">Director and Boys Coach</p>
+                        <!-- <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
+                            elementum.</p>
+                        <p><button class="w3-button w3-light-grey w3-block">Contact</button></p> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-third w3-margin-bottom">
+                <div class="w3-card-4">
+                    <img src="./resources/images/headshots/ricky.headshot.2.jpg" alt="Mike" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Ricky Larkin</h3>
+                        <p class="w3-opacity">Director and Boys Coach</p>
+                        <!-- <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
+                            elementum.</p>
+                        <p><button class="w3-button w3-light-grey w3-block">Contact</button></p> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-third w3-margin-bottom">
+                <div class="w3-card-4">
+                    <img src="./resources/images/headshots/adam.headshot.2.jpg" alt="Jane" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Adam Eddinger</h3>
+                        <p class="w3-opacity">Boys Coach</p>
+                        <!-- <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
+                            elementum.</p>
+                        <p><button class="w3-button w3-light-grey w3-block">Contact</button></p> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-third w3-margin-bottom">
+                <div class="w3-card-4">
+                    <img src="./resources/images/headshots/amos.headshot.jpg" alt="John" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Amos Allard</h3>
+                        <p class="w3-opacity">Boys Coach</p>
+                        <!-- <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
+                            elementum.</p>
+                        <p><button class="w3-button w3-light-grey w3-block">Contact</button></p> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-third w3-margin-bottom">
+                <div class="w3-card-4">
+                    <img src="./resources/images/headshots/jarron.headshot.jpg" alt="Mike" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Jarron Woodson</h3>
+                        <p class="w3-opacity">Boys Coach</p>
+                        <!-- <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
+                            elementum.</p>
+                        <p><button class="w3-button w3-light-grey w3-block">Contact</button></p> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-third w3-margin-bottom">
+                <div class="w3-card-4">
+                    <img src="./resources/images/headshots/chris.bair.headshot.jpg" alt="Jane" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Chris Blair</h3>
+                        <p class="w3-opacity">Boys Head Coach</p>
+                        <!-- <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
+                            elementum.</p>
+                        <p><button class="w3-button w3-light-grey w3-block">Contact</button></p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="w3-center w3-padding-64" id="contact">
+            <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Contact Us</span>
+        </div>
+        <div class="w3-row-padding">
+            <div class="w3-quarter">
+                <div>
+                    <a href="https://www.instagram.com/wasatchlc/" target="_blank">
+                        <img src="./resources/images/logo/logo.instagram.png" style="width:100%"
+                            alt="Check us out on instagram"></a>
+                </div>
+            </div>
+            <div class="w3-quarter">
+                <div>
+                    <a href="https://www.facebook.com/wasatchlc/" target="_blank">
+                        <img src="./resources/images/logo/logo.facebook.png" style="width:100%"
+                            alt="Check us out on facebook"></a>
+                </div>
+            </div>
+            <div class="w3-quarter">
+                <div>
+                    <a href="https://www.youtube.com/user/WasatchLC/featured" target="_blank">
+                        <img src="./resources/images/logo/new-youtube-logo.jpg" style="width:100%"
+                            alt="Check us out on YouTube"></a>
+                </div>
+            </div>
+            <div class="w3-quarter">
+                <div>
+                    <a href="mailto:dannylarkin15@gmail.com;rickylarkin@hotmail.com;wasatchLC@gmail.com?subject=Question About Wasatch Lacrosse" target="_blank">
+                        <img src="./resources/images/logo/email.logo.png" style="width:100%"
+                            alt="Email"></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+
+    <footer class="w3-container w3-padding-32 w3-light-grey w3-center">
+        <h4>Footer</h4>
+        <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
+                class="w3-hover-text-green">w3.css</a></p>
+        <p>with a little help from <a href="https://jarrydstamatelos.com/" title="Jarryd Stamatelos" target="_blank"
+            class="w3-hover-text-green">Jarryd Stamatelos</a></p>
+    </footer>
+
+
+    <script>
+        // Slideshow
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function currentDiv(n) {
+            showDivs(slideIndex = n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demodots");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length };
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" w3-white", "");
+            }
+            x[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " w3-white";
+        }
+    </script>
+
+</body>
+
+</html>
