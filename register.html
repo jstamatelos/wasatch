@@ -5,102 +5,225 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="script.js"></script>
 <link rel="stylesheet" type="text/css" href="style.css">
 
 <body>
 
-  <form action="" style="border:1px solid #ccc">
-    <div class="container">
-      <h1>Register</h1>
-      <hr>
-      <p>Player Information.</p>
-      <hr>
-      <label for="player_first_name"><b>First Name</b></label>
-      <input type="text" placeholder="Enter First Name" name="player_first_name" required>
+  <form class="w3-container" id= "registrationForm" name="registrationForm">
+    <!-- Tournament Radio Group -->
+    <!-- Player Options Position Drop Down Group -->
+    <p><label for="which_tournament">Register for:</label>
+        <select id="whichTournament" required>
+            <option value=""></option>
+            <option value="boys_aug_15">Boys Tryouts - August 15, 2021</option>
+            <option value="boys_aug_22">Boys Tryouts - August 22, 2021</option>
+            <option value="girls_aug_15">Girls Tryouts - August 15, 2021</option>
+            <option value="girls_aug_22">Girls Tryouts - August 22, 2021</option>
+        </select></p>
 
-      <label for="player_last_name"><b>Last Name</b></label>
-      <input type="text" placeholder="Enter Last Name" name="player_last_name" required>
+        <!-- Player Options-->
+    <p><label for="first_name">Player First Name:</label>
+        <input class="w3-input" type="text" name="first_name" id="firstName" required></p>
 
-      <label for="player_email"><b>Email</b></label>
-      <input type="text" placeholder="Enter Email" name="player_email" required>
+    <p><label for="last_name">Player Last Name:</label>
+        <input class="w3-input" type="text" name="last_name" id="lastName" required></p>
 
-      <label for="player_street"><b>Street Address</b></label>
-      <input type="text" placeholder="Enter Street" name="player_street" required>
+    <p><label for="email">Player Email:</label>
+        <input class="w3-input" type="email" name="player_email" id="email" required></p>
 
-      <label for="player_city"><b>City</b></label>
-      <input type="text" placeholder="Enter City" name="player_city" required>
+    <p><label for="player_phone_number">Player Phone Number:</label>
+        <input class="w3-input" type="tel" name="player_phone_number" id="playerPhoneNumber" required></p>
 
-      <label for="player_zip"><b>Zip Code</b></label>
-      <input type="text" placeholder="Enter Zip" name="player_zip" required>
+    <p><label for="player_address_street">Player Address Street:</label>
+        <input class="w3-input" type="text" name="player_address_street" id="playerAddressStreet" required></p>
 
-      <label for="player_dob"><b>Date of Birth</b></label>
-      <input type="text" placeholder="Enter Date of Birth" name="player_dob" required>
+    <p><label for="player_address_city">Player Address City:</label>
+        <input class="w3-input" type="text" name="player_address_city" id="playerAddressCity" required></p>
 
-      <label for="player_uslax_num"><b>US Lacrosse #</b></label>
-      <input type="text" placeholder="Enter US Lacrosse #" name="player_uslax_num" required>
+    <p><label for="player_address_zip">Player Address Zip Code:</label>
+        <input class="w3-input" type="text" name="player_address_zip" id="playerAddressZip" required></p>
 
-      <label for="player_school"><b>High School</b></label>
-      <input type="text" placeholder="Enter High School" name="player_school" required>
+    <p><label for="player_usLacrosse_number">Player US Lacrosse Number:</label>
+        <input class="w3-input" type="text" name="player_usLacrosse_number" id="usLacrosseNumber" required></p>
 
-      <label for="positions"><b>Position:</b></label>
-      <select id="positions" required>
-        <option value=""></option>
-        <option value="attack"> Attack</option>
-        <option value="midfield"> Midfield</option>
-        <option value="long stick midfield"> Long Stick Midfield</option>
-        <option value="defense"> Defense</option>
-        <option value="goalie"> Goalie</option>
-      </select>
-      <br>
-      <label for="gradYearSelection"><b>Graduation Year:</b></label>
-      <select id="gradYearSelection" required>
-        <option value=""></option>
-        <option value="2020"> 2020</option>
-        <option value="2021"> 2021</option>
-        <option value="2022"> 2022</option>
-        <option value="2023"> 2023</option>
-        <option value="2024"> 2024</option>
-      </select>
-      <br>
-      <label for="experienceSelection"><b>Player Experience:</b></label>
-      <select id="experienceSelection" required>
-        <option value=""></option>
-        <option value="none">Never Played</option>
-        <option value="beginner">Beginner</option>
-        <option value="intermediate">Intermediate</option>
-        <option value="advanced">Advanced</option>
-      </select>
-      <hr>
-      <p>Parent / Guardian Information.</p>
-      <hr>
-      <label for="parent_first_name"><b>First Name</b></label>
-      <input type="text" placeholder="Enter First Name" name="parent_first_name" required>
+    <!-- Player Options Position Drop Down Group -->
+    <p><label for="positions">Position:</label><br>
+        <select id="positions" required>
+            <option value=""></option>
+            <option value="attack"> Attack</option>
+            <option value="midfield"> Midfield</option>
+            <option value="long stick midfield"> Long Stick Midfield</option>
+            <option value="defense"> Defense</option>
+            <option value="goalie"> Goalie</option>
+        </select></p>
+        <!-- Player Options Position Drop Down Group End -->
 
-      <label for="parent_last_name"><b>Last Name</b></label>
-      <input type="text" placeholder="Enter Last Name" name="parent_last_name" required>
+        <!-- Player Options Grad year Selection Drop Down Group -->
+    <p><label for="gradYearSelection">Graduation Year:</label><br>
+        <select id="gradYearSelection" required>
+            <option value=""></option>
+            <option value="2020"> 2020</option>
+            <option value="2021"> 2021</option>
+            <option value="2022"> 2022</option>
+            <option value="2023"> 2023</option>
+            <option value="2024"> 2024</option>
+        </select></p>
+        <!-- Player Options Grad Year Selection Drop Down Group End -->
 
-      <label for="parent_email"><b>Email</b></label>
-      <input type="text" placeholder="Enter Email" name="parent_email" required>
+        <!-- Player Options Experience Selection Drop Down Group -->
+    <p><label for="experienceSelection">Player Experience:</label><br>
+        <select id="experienceSelection" required>
+            <option value=""></option>
+            <option value="none"> Never Played</option>
+            <option value="beginner"> Beginner</option>
+            <option value="intermediate"> Intermediate</option>
+            <option value="advanced"> Advanced</option>
+        </select></p>
+        <!-- Player Options Experience Selection Drop Down Group End -->
 
-      <label for="parent_street"><b>Street Address</b></label>
-      <input type="text" placeholder="Enter Street (if different from player)" name="parent_street">
+    <p><label for="high_school">High School: </label>
+        <input class="w3-input" type="text" name="high_school_selection" id="highSchoolSelection" required></p>
 
-      <label for="parent_city"><b>City</b></label>
-      <input type="text" placeholder="Enter City (if different from player)" name="parent_city">
+    <!-- Player Options End-->
 
-      <label for="parent_zip"><b>Zip Code</b></label>
-      <input type="text" placeholder="Enter Zip (if different from player)" name="parent_zip">
+    <!-- Parent Options -->
+    <label for="first_name">Parent First Name:</label>
+        <input class="w3-input" type="text" name="parent_first_name" id="parentFirstName" required></p>
 
-      <p>By submitting this registration, I hereby certify that the applicant has a valid US Lacrosse Membership and is in good physical condition to participate in the WASATCH LACROSSE events. WASATCH LACROSSE and our staff are not responsible and will not provide payment of any medical, dental, hospital or laboratory fees due to injury incurred while participating in the WASATCH LACROSSE events or during travel to and from the events.
-      </a>.</p>
+    <p><label for="last_name">Parent Last Name:</label>
+        <input class="w3-input" type="text" name="parent_last_name" id="parentLastName" required></p>
 
-      <div class="clearfix">
-        <button type="submit" class="signupbtn">Submit</button>
-      </div>
+    <p><label for="parent_email">Parent Email:</label>
+        <input class="w3-input" type="email" name="parent_email" id="parentEmail" required></p>
+
+    <p><label for="parent_phone_number">Parent Phone Number:</label>
+        <input class="w3-input" type="tel" name="parent_phone_number" id="parentPhoneNumber" required></p>
+
+    <p><label for="parent_address_street">Parent Address Street:</label>
+        <input class="w3-input" type="text" name="parent_address_street" id="parentAddressStreet" required></p>
+
+    <p><label for="parent_address_city">Parent Address City:</label>
+        <input class="w3-input" type="text" name="parent_address_city" id="parentAddressCity" required></p>
+
+    <p><label for="parent_address_zip">Parent Address Zip:</label>
+        <input class="w3-input" type="text" name="parent_address_zip" id="parentAddressZip" required></p>
+    <!-- Parent Options End -->
+    <div>
+        <label for="agreement">
+            <p><input type="checkbox" name="remember" id="agreement" required> By submitting this registration, I hereby certify that the applicant has a valid US Lacrosse Membership and is in good physical condition to participate in the WASATCH LACROSSE events.
+                WASATCH LACROSSE and our staff are not responsible and will not provide payment of any medical, dental, hospital or laboratory fees due to injury incurred while participating in the WASATCH LACROSSE events or during travel to and from the events.</p>
+          </label>
     </div>
-  </form>
 
+    <input value="Submit" type="submit" onclick="post()">
+</form>
+
+  <script>
+    function getDropDownSelection(element) {
+        const e = document.getElementById(element);
+        if (e === null || e === undefined || !e) {
+          return ' '
+        }
+        const value = e.options[e.selectedIndex].value;
+        return value
+    }
+
+    function getTournamentSelection() {
+        const selections = []
+        const ele = document.getElementsByName("whichTournament");
+        if (ele === null || ele === undefined || !ele) {
+          return ' '
+        }
+        for (i = 0; i < ele.length; i++) {
+            if (ele[i].checked) {
+                selection = ele[i].value
+                selections.push(selection)
+            }
+        }
+        return selections[0]
+    }
+    function post() {
+        const xhttp = new XMLHttpRequest();
+        // player info
+        const first = document.getElementById("firstName").value
+        const last = document.getElementById("lastName").value
+        const registrantEmail = document.getElementById("email").value
+        const gradYear = getDropDownSelection("gradYearSelection")
+        const tournamentSelection = getDropDownSelection("whichTournament")
+        const experience = getDropDownSelection("experienceSelection")
+        const position = getDropDownSelection("positions")
+        const school = document.getElementById("highSchoolSelection").value
+        const team = getDropDownSelection("teamSelection")
+        const playerPhone = document.getElementById("playerPhoneNumber").value
+        const playerAddressStreet = document.getElementById("playerAddressStreet").value
+        const playerAddressCity = document.getElementById("playerAddressCity").value
+        const playerAddressZip = document.getElementById("playerAddressZip").value
+        const usLacrosseNumber = document.getElementById("usLacrosseNumber").value
+        // parent info
+        const parentFirstName = document.getElementById("parentFirstName").value
+        const parentLastName = document.getElementById("parentLastName").value
+        const parentEmail = document.getElementById("parentEmail").value
+        const parentPhoneNumber = document.getElementById("parentPhoneNumber").value
+        const parentAddressStreet = document.getElementById("parentAddressStreet").value
+        const parentAddressCity = document.getElementById("parentAddressCity").value
+        const parentAddressZip = document.getElementById("parentAddressZip").value
+        // formData
+        const formData = {
+            firstName: first,
+            lastName: last,
+            registrantEmail: registrantEmail,
+            tournament: tournamentSelection,
+            playerPhoneNumber: playerPhone,
+            playerAddressStreet: playerAddressStreet,
+            playerAddressCity: playerAddressCity,
+            playerAddressZip: playerAddressZip,
+            usLacrosseNumber: usLacrosseNumber,
+            playerPostion: position,
+            teamSelection: team,
+            graduationYear: gradYear,
+            expLevel: experience,
+            highSchool: school,
+            parentFirstName: parentFirstName,
+            parentLastName: parentLastName,
+            parentEmail: parentEmail,
+            parentPhoneNumber: parentPhoneNumber,
+            parentAddressStreet: parentAddressStreet,
+            parentAddressCity: parentAddressCity,
+            parentAddressZip: parentAddressZip
+        }
+        xhttp.onreadystatechange = function () {
+            if (this.readyState === 4 && this.status === 200) {
+                console.log(this.status)
+            }
+        }
+        xhttp.open("POST", 'https://wasatch-server.herokuapp.com/register')
+
+        xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8")
+        xhttp.setRequestHeader("Accept", "application/json")
+        xhttp.send(JSON.stringify(formData))
+    }
+    // Script to open and close sidebar
+    function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+    }
+
+    // Modal Image Gallery
+    function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+    }
+    function popUp() {
+        window.alert('Coming Soon!')
+    }
+</script>
 </body>
 
 </html>
