@@ -153,7 +153,6 @@
         const experience = getDropDownSelection("experienceSelection")
         const position = getDropDownSelection("positions")
         const school = document.getElementById("highSchoolSelection").value
-        const team = getDropDownSelection("teamSelection")
         const playerPhone = document.getElementById("playerPhoneNumber").value
         const playerAddressStreet = document.getElementById("playerAddressStreet").value
         const playerAddressCity = document.getElementById("playerAddressCity").value
@@ -167,6 +166,10 @@
         const parentAddressStreet = document.getElementById("parentAddressStreet").value
         const parentAddressCity = document.getElementById("parentAddressCity").value
         const parentAddressZip = document.getElementById("parentAddressZip").value
+
+        // agreement
+        const agreement = document.getElementById("agreement").checked
+
         // formData
         const formData = {
             firstName: first,
@@ -179,7 +182,6 @@
             playerAddressZip: playerAddressZip,
             usLacrosseNumber: usLacrosseNumber,
             playerPostion: position,
-            teamSelection: team,
             graduationYear: gradYear,
             expLevel: experience,
             highSchool: school,
@@ -189,14 +191,16 @@
             parentPhoneNumber: parentPhoneNumber,
             parentAddressStreet: parentAddressStreet,
             parentAddressCity: parentAddressCity,
-            parentAddressZip: parentAddressZip
+            parentAddressZip: parentAddressZip,
+            agreement: agreement
         }
         xhttp.onreadystatechange = function () {
             if (this.readyState === 4 && this.status === 200) {
                 console.log(this.status)
             }
         }
-        xhttp.open("POST", 'https://wasatch-server.herokuapp.com/register')
+        // xhttp.open("POST", 'https://wasatch-server.herokuapp.com/register')
+        xhttp.open("POST", 'http://localhost:3000/register')
 
         xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8")
         xhttp.setRequestHeader("Accept", "application/json")
