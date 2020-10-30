@@ -206,19 +206,19 @@
                 console.log(this.status)
             }
         }
-        xhr.withCredentials = true;
-        xhttp.setRequestHeader('Content-type', 'application/json; charset=utf-8');
-        xhttp.setRequestHeader("Accept", "application/json")
-        xhttp.open("POST", 'https://wasatch-server.herokuapp.com/register', true)
+        xhttp.withCredentials = true
+        xhttp.setRequestHeader('Content-type', 'application/json; charset=utf-8')
+        xhttp.setRequestHeader('accept', 'application/json')
+        xhttp.open('POST', 'https://wasatch-server.herokuapp.com/register')
         // xhttp.open("POST", 'http://localhost:3000/register')
         
         xhttp.responseType = 'json'
         xhttp.send(JSON.stringify(formData))
-        xhr.onload = function() {
-        let responseObj = xhr.response
-        console.log(responseObj.message)
+        // xhttp.onload = function() {
+        //     let responseObj = xhttp.response
+        //     console.log(responseObj.message)
+        // }
         window.alert('SENT !')
-        };
     }
     // Script to open and close sidebar
     function w3_open() {
