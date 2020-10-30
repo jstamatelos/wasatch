@@ -149,6 +149,7 @@
         }
         return selections[0]
     }
+
     function post() {
         const xhttp = new XMLHttpRequest();
         // player info
@@ -201,6 +202,13 @@
             parentAddressZip: parentAddressZip,
             agreement: agreement
         }
+        for (const [key, val] of Object.entries(formData)) {
+            if (val === '') {
+                alert('Please fill in missing required field')
+                return
+            }
+        }
+
         xhttp.onreadystatechange = function () {
             if (this.readyState === 4 && this.status === 200) {
                 console.log(this.status)
@@ -216,7 +224,7 @@
             let responseObj = xhttp.response
             console.log(responseObj)
         }
-        window.alert('Success!')
+        window.alert('Registration Request Recieved, if you do not receieve a response email please contact us!')
 
     }
     // Script to open and close sidebar
