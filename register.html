@@ -206,13 +206,11 @@
                 console.log(this.status)
             }
         }
-        xhttp.withCredentials = true
-        xhttp.setRequestHeader('Content-type', 'application/json; charset=utf-8')
-        xhttp.setRequestHeader('accept', 'application/json')
+
         xhttp.open('POST', 'https://wasatch-server.herokuapp.com/register')
         // xhttp.open("POST", 'http://localhost:3000/register')
-        
-        xhttp.responseType = 'json'
+        xhttp.setRequestHeader('Content-type', 'application/json; charset=utf-8')
+        xhttp.setRequestHeader('accept', 'application/json')
         xhttp.send(JSON.stringify(formData))
         // xhttp.onload = function() {
         //     let responseObj = xhttp.response
